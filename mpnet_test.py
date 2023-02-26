@@ -1,6 +1,7 @@
 from __future__ import print_function
 from Model.end2end_model import End2EndMPNet
 import Model.model as model
+import Model.model_nd as modelnd
 import Model.AE.CAE as CAE_2d
 import numpy as np
 import argparse
@@ -42,6 +43,9 @@ def main(args):
         CAE = CAE_2d
         MLP = model.MLP
 
+        if args.drop == False:
+            MLP = modelnd.MLP
+
     mpNet = End2EndMPNet(total_input_size, AE_input_size, mlp_input_size, \
                 output_size, CAE, MLP)
     if not os.path.exists(args.model_path):
@@ -68,6 +72,8 @@ def main(args):
     print('loading...')
     test_data = load_test_dataset(N=args.N, NP=args.NP, s=args.s, sp=args.sp, folder=args.data_path)
     obc, obs, paths, path_lengths = test_data
+    print("paths: ", len(paths))
+    print(path_lengths) 
 
     normalize_func=lambda x: normalize(x, args.world_size)
     unnormalize_func=lambda x: unnormalize(x, args.world_size)
@@ -115,7 +121,10 @@ def main(args):
             for t in range(MAX_NEURAL_REPLAN):
                 path = neural_plan(mpNet, path, obc[i], obs[i], IsInCollision, \
                                     normalize_func, unnormalize_func, t==0, step_sz=step_sz)
-                path = lvc(path, obc[i], IsInCollision, step_sz=step_sz)
+                
+                if args.lvc == True:
+                    path = lvc(path, obc[i], IsInCollision, step_sz=step_sz)
+                
                 if feasibility_check(path, obc[i], IsInCollision, step_sz=step_sz):
                     found_path = True
                     n_successful_cur += 1
@@ -160,11 +169,14 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--lvc', type=bool, default=True, help='lvc on off')
+    parser.add_argument('--drop', type=bool, default=True, help='drop out on off')
+
     parser.add_argument('--model-path', type=str, default='./models/',help='folder of trained model')
-    parser.add_argument('--N', type=int, default=1, help='number of environments')
-    parser.add_argument('--NP', type=int, default=1, help='number of paths per environment')
+    parser.add_argument('--N', type=int, default=110, help='number of environments')
+    parser.add_argument('--NP', type=int, default=501, help='number of paths per environment')
     parser.add_argument('--s', type=int, default=0, help='start of environment index')
-    parser.add_argument('--sp', type=int, default=4000, help='start of path index')
+    parser.add_argument('--sp', type=int, default=0, help='start of path index')
 
     # Model parameters
     parser.add_argument('--device', type=int, default=0, help='cuda device')
