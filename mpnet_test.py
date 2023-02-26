@@ -1,6 +1,7 @@
 from __future__ import print_function
 from Model.end2end_model import End2EndMPNet
 import Model.model as model
+import Model.model_nd as modelnd
 import Model.AE.CAE as CAE_2d
 import numpy as np
 import argparse
@@ -16,6 +17,7 @@ import random
 from utility import *
 import utility_s2d
 import progressbar
+import logging
 
 def main(args):
     # set seed
@@ -41,6 +43,9 @@ def main(args):
         unnormalize = utility_s2d.unnormalize
         CAE = CAE_2d
         MLP = model.MLP
+
+        if args.drop == False:
+            MLP = modelnd.MLP
 
     mpNet = End2EndMPNet(total_input_size, AE_input_size, mlp_input_size, \
                 output_size, CAE, MLP)
@@ -85,6 +90,8 @@ def main(args):
     max_time = -float('inf')
 
     for i in range(len(paths)):
+        logging.info(f'planning start: env={args.s + i}')
+
         n_valid_cur = 0
         n_successful_cur = 0
 
@@ -115,7 +122,10 @@ def main(args):
             for t in range(MAX_NEURAL_REPLAN):
                 path = neural_plan(mpNet, path, obc[i], obs[i], IsInCollision, \
                                     normalize_func, unnormalize_func, t==0, step_sz=step_sz)
-                path = lvc(path, obc[i], IsInCollision, step_sz=step_sz)
+                
+                if args.lvc == True:
+                    path = lvc(path, obc[i], IsInCollision, step_sz=step_sz)
+                
                 if feasibility_check(path, obc[i], IsInCollision, step_sz=step_sz):
                     found_path = True
                     n_successful_cur += 1
@@ -157,14 +167,18 @@ def main(args):
             avg_time = sum_time / n_valid_total
             stdev_time = np.sqrt((sum_timesq - sum_time * avg_time) / (n_valid_total - 1)) if n_valid_total > 1 else 0
         print(f'cumulative: success rate={success_rate:.2f}, runtime (min/avg/max/stdev) = {min_time:.2f}/{avg_time:.2f}/{max_time:.2f}/{stdev_time:.2f}s')
+        logging.info('cumulative: success rate={success_rate:.2f}, runtime (min/avg/max/stdev) = {min_time:.2f}/{avg_time:.2f}/{max_time:.2f}/{stdev_time:.2f}s')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--lvc', type=bool, default=True, help='lvc on off')
+    parser.add_argument('--drop', type=bool, default=True, help='drop out on off')
+
     parser.add_argument('--model-path', type=str, default='./models/',help='folder of trained model')
-    parser.add_argument('--N', type=int, default=1, help='number of environments')
-    parser.add_argument('--NP', type=int, default=1, help='number of paths per environment')
+    parser.add_argument('--N', type=int, default=110, help='number of environments')
+    parser.add_argument('--NP', type=int, default=501, help='number of paths per environment')
     parser.add_argument('--s', type=int, default=0, help='start of environment index')
-    parser.add_argument('--sp', type=int, default=4000, help='start of path index')
+    parser.add_argument('--sp', type=int, default=0, help='start of path index')
 
     # Model parameters
     parser.add_argument('--device', type=int, default=0, help='cuda device')
@@ -176,5 +190,10 @@ if __name__ == '__main__':
     parser.add_argument('--reproducible', default=False, action='store_true', help='use seed bundled with trained model')
 
     args = parser.parse_args()
+    # Initialize Logging
+    logging.basicConfig(filename="log.txt", level=logging.INFO)
+    logging.info(args)
+
+
     print(args)
     main(args)
