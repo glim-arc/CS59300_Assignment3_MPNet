@@ -173,19 +173,19 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lvc', type=bool, default=False, help='lvc on off')
-    parser.add_argument('--drop', type=bool, default=True, help='drop out on off')
+    parser.add_argument('--lvc', type=bool, default=True, help='lvc on off')
+    parser.add_argument('--drop', type=bool, default=False, help='drop out on off')
 
     parser.add_argument('--model-path', type=str, default='./models/',help='folder of trained model')
-    parser.add_argument('--N', type=int, default=110, help='number of environments')
+    parser.add_argument('--N', type=int, default=11, help='number of environments')
     parser.add_argument('--NP', type=int, default=100, help='number of paths per environment')
     parser.add_argument('--s', type=int, default=0, help='start of environment index')
-    parser.add_argument('--sp', type=int, default=4001, help='start of path index')
+    parser.add_argument('--sp', type=int, default=2001, help='start of path index')
 
     # Model parameterss
     parser.add_argument('--device', type=int, default=0, help='cuda device')
     parser.add_argument('--data-path', type=str, default='./data/', help='path to dataset')
-    parser.add_argument('--result-path', type=str, default='./results/', help='folder to save paths computed')
+    parser.add_argument('--result-path', type=str, default='./results2/', help='folder to save paths computed')
     parser.add_argument('--epoch', type=int, default=100, help='epoch of trained model to use')
     parser.add_argument('--env-type', type=str, default='s2d', help='s2d for simple 2d')
     parser.add_argument('--world-size', nargs='+', type=float, default=20., help='boundary of world')
@@ -193,7 +193,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     # Initialize Logging
-    logging.basicConfig(filename="log.txt", level=logging.INFO)
+    logging.basicConfig(filename="log2.txt", level=logging.INFO)
     logging.info(args)
 
 

@@ -1,0 +1,14 @@
+INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=66, sp=4001, world_size=20.0)
+INFO:root:planning start: env=66
+INFO:root:cumulative: success rate=0.83, runtime (min/avg/max/stdev) = 0.02/1.02/6.98/1.82s
+INFO:root:planning start: env=67
+INFO:root:cumulative: success rate=0.80, runtime (min/avg/max/stdev) = 0.01/2.49/86.06/8.22s
+INFO:root:planning start: env=68
+INFO:root:cumulative: success rate=0.83, runtime (min/avg/max/stdev) = 0.01/1.97/86.06/6.91s
+INFO:root:planning start: env=69
+INFO:root:cumulative: success rate=0.83, runtime (min/avg/max/stdev) = 0.01/1.86/86.06/6.32s
+INFO:root:planning start: env=70
+INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
+INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
+INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
+INFO:root:planning start: env=0
