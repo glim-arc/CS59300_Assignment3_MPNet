@@ -1,0 +1,2 @@
+./data/e0/path4001.dat  :  35.73646310786616 (expert)
+./results2/env_0/path_4001_1.txt  :  37.13409040577743 (mpnet)

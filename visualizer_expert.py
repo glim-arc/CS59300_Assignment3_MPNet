@@ -43,8 +43,8 @@ def main(args):
 
         totdist = 0
 
-        for point in path:
-            totdist += math.dist(point)
+        for i in range(len(path)-1):
+            totdist += math.dist(path[i], path[i+1])
 
         print(path_file, " : ", totdist)
 
