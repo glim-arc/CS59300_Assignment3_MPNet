@@ -160,9 +160,9 @@ def main(args):
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--model-path', type=str, default='./models/',help='path for saving trained models')
-parser.add_argument('--data-path', type=str, default='../data/simple/')
+parser.add_argument('--data-path', type=str, default='../data/')
 parser.add_argument('--N', type=int, default=100, help='number of environments')
-parser.add_argument('--NP', type=int, default=4000, help='number of paths per environment')
+parser.add_argument('--NP', type=int, default=2000, help='number of paths per environment')
 
 parser.add_argument('--batch-size', type=int, default=100)
 parser.add_argument('--learning-rate', type=float, default=0.01)
@@ -171,7 +171,7 @@ parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--start-epoch', type=int, default=0)
 parser.add_argument('--device', type=int, default=0, help='cuda device')
 
-parser.add_argument('--env-type', type=str, default='s2d', help='s2d for simple 2d')
+parser.add_argument('--env-type', type=str, default='s3d', help='s2d for simple 2d')
 parser.add_argument('--world-size', nargs='+', type=float, default=20., help='boundary of world')
 parser.add_argument('--opt', type=str, default='Adagrad')
 args = parser.parse_args()
