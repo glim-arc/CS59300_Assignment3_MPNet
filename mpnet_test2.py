@@ -174,13 +174,13 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--lvc', type=bool, default=True, help='lvc on off')
-    parser.add_argument('--drop', type=bool, default=False, help='drop out on off')
+    parser.add_argument('--drop', type=bool, default=True, help='drop out on off')
 
     parser.add_argument('--model-path', type=str, default='./models/',help='folder of trained model')
-    parser.add_argument('--N', type=int, default=11, help='number of environments')
-    parser.add_argument('--NP', type=int, default=100, help='number of paths per environment')
+    parser.add_argument('--N', type=int, default=1, help='number of environments')
+    parser.add_argument('--NP', type=int, default=1, help='number of paths per environment')
     parser.add_argument('--s', type=int, default=0, help='start of environment index')
-    parser.add_argument('--sp', type=int, default=2001, help='start of path index')
+    parser.add_argument('--sp', type=int, default=4001, help='start of path index')
 
     # Model parameterss
     parser.add_argument('--device', type=int, default=0, help='cuda device')

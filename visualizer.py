@@ -44,10 +44,10 @@ def main(args):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data-path', type=str, default='../data/simple/')
+parser.add_argument('--data-path', type=str, default='./data/')
 parser.add_argument('--env-id', type=int, default=0)
 parser.add_argument('--point-cloud', default=False, action='store_true')
-parser.add_argument('--path-file', nargs='*', type=str, default=[], help='path file')
+parser.add_argument('--path-file', nargs='*', type=str, default=["./results2/env_0/path_4001_1.txt", "./results2/env_0/path_4001_2.txt", "./results2/env_0/path_4001_3.txt", "./results2/env_0/path_4001_4.txt", "./results2/env_0/path_4001_5.txt"], help='path file')
 args = parser.parse_args()
 print(args)
 main(args)

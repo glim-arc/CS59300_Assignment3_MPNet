@@ -12,3 +12,7 @@ INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env
 INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
 INFO:root:Namespace(N=110, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=False, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
 INFO:root:planning start: env=0
+INFO:root:Namespace(N=100, NP=100, data_path='./data/', device=0, drop=True, env_type='s2d', epoch=100, lvc=True, model_path='./models/', reproducible=False, result_path='./results/', s=0, sp=4001, world_size=20.0)
+INFO:root:planning start: env=0
+INFO:root:cumulative: success rate=0.99, runtime (min/avg/max/stdev) = 0.01/0.43/2.59/0.55s
+INFO:root:planning start: env=1
