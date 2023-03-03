@@ -4,6 +4,7 @@ import matplotlib.patches as mpatches
 import struct
 import numpy as np
 import argparse
+import math
 
 import data_loader_2d
 
@@ -40,8 +41,14 @@ def main(args):
 
         plt.plot(path_x, path_y, marker='o')
 
-    plt.show()
+        totdist = 0
 
+        for point in path:
+            totdist += math.dist(point)
+
+        print(path_file, " : ", totdist)
+
+    plt.show()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--data-path', type=str, default='./data/')
