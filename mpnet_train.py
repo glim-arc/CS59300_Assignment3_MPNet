@@ -2,6 +2,7 @@ from __future__ import print_function
 from Model.end2end_model import End2EndMPNet, End2EndMPNet3D
 import Model.model as model
 import Model.AE.CAE as CAE_2d
+import Model.AE.CAE3D as CAE_3d
 import numpy as np
 import argparse
 import os
@@ -46,14 +47,14 @@ def main(args):
                              output_size, CAE, MLP)
 
     if args.env_type == 's3d':
-        total_input_size = 2800+4
-        AE_input_size = 2800
-        mlp_input_size = 28+4
+        total_input_size = 6000+4
+        AE_input_size = 6000
+        mlp_input_size = 30+4
         output_size = 3
         load_train_dataset = data_loader_r3d.load_train_dataset
         normalize = utility_s3d.normalize
         unnormalize = utility_s3d.unnormalize
-        CAE = CAE_2d
+        CAE = CAE_3d
         MLP = model.MLP
 
         mpNet = End2EndMPNet3D(total_input_size, AE_input_size, mlp_input_size, \
@@ -178,8 +179,8 @@ def main(args):
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--model-path', type=str, default='./models/',help='path for saving trained models')
-parser.add_argument('--data-path', type=str, default='../data/')
+parser.add_argument('--model-path', type=str, default='./models3d/',help='path for saving trained models')
+parser.add_argument('--data-path', type=str, default='./data/')
 parser.add_argument('--N', type=int, default=100, help='number of environments')
 parser.add_argument('--NP', type=int, default=2000, help='number of paths per environment')
 

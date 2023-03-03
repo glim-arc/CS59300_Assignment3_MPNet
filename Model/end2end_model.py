@@ -41,7 +41,7 @@ class End2EndMPNet(nn.Module):
 
 class End2EndMPNet3D(nn.Module):
     def __init__(self, total_input_size, AE_input_size, mlp_input_size, output_size, CAE, MLP):
-        super(End2EndMPNet, self).__init__()
+        super(End2EndMPNet3D, self).__init__()
         self.encoder = CAE.Encoder()
         self.mlp = MLP(mlp_input_size, output_size)
         self.mse = nn.MSELoss()
