@@ -1,0 +1,206 @@
+INFO:root:planning start: env=0
+INFO:root:cumulative: success rate=0.63, runtime (min/avg/max/stdev) = 0.00/1.41/8.55/1.92s
+INFO:root:planning start: env=1
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.21/8.55/1.71s
+INFO:root:planning start: env=2
+INFO:root:cumulative: success rate=0.71, runtime (min/avg/max/stdev) = 0.00/1.10/11.76/1.77s
+INFO:root:planning start: env=3
+INFO:root:cumulative: success rate=0.73, runtime (min/avg/max/stdev) = 0.00/0.99/11.76/1.65s
+INFO:root:planning start: env=4
+INFO:root:cumulative: success rate=0.74, runtime (min/avg/max/stdev) = 0.00/0.96/11.76/1.63s
+INFO:root:planning start: env=5
+INFO:root:cumulative: success rate=0.74, runtime (min/avg/max/stdev) = 0.00/0.96/11.76/1.62s
+INFO:root:planning start: env=6
+INFO:root:cumulative: success rate=0.72, runtime (min/avg/max/stdev) = 0.00/0.96/11.76/1.59s
+INFO:root:planning start: env=7
+INFO:root:cumulative: success rate=0.71, runtime (min/avg/max/stdev) = 0.00/0.99/11.76/1.59s
+INFO:root:planning start: env=8
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.05/11.76/1.65s
+INFO:root:planning start: env=9
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.08/11.76/1.72s
+INFO:root:planning start: env=10
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.04/11.76/1.68s
+INFO:root:planning start: env=11
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.04/11.76/1.70s
+INFO:root:planning start: env=12
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.04/11.76/1.69s
+INFO:root:planning start: env=13
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.01/11.76/1.65s
+INFO:root:planning start: env=14
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.04/11.76/1.68s
+INFO:root:planning start: env=15
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.05/11.76/1.67s
+INFO:root:planning start: env=16
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.04/11.76/1.66s
+INFO:root:planning start: env=17
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.02/11.76/1.63s
+INFO:root:planning start: env=18
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.01/11.76/1.62s
+INFO:root:planning start: env=19
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.02/11.76/1.64s
+INFO:root:planning start: env=20
+INFO:root:cumulative: success rate=0.70, runtime (min/avg/max/stdev) = 0.00/1.02/11.76/1.63s
+INFO:root:planning start: env=21
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.05/18.43/1.69s
+INFO:root:planning start: env=22
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.05/18.43/1.68s
+INFO:root:planning start: env=23
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.06/18.43/1.70s
+INFO:root:planning start: env=24
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.06/18.43/1.70s
+INFO:root:planning start: env=25
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.08/18.43/1.72s
+INFO:root:planning start: env=26
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.06/18.43/1.70s
+INFO:root:planning start: env=27
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.06/18.43/1.69s
+INFO:root:planning start: env=28
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/18.43/1.69s
+INFO:root:planning start: env=29
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/18.43/1.70s
+INFO:root:planning start: env=30
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.08/18.43/1.72s
+INFO:root:planning start: env=31
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/18.43/1.70s
+INFO:root:planning start: env=32
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.08/18.43/1.72s
+INFO:root:planning start: env=33
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.09/18.43/1.72s
+INFO:root:planning start: env=34
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.09/18.43/1.71s
+INFO:root:planning start: env=35
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.09/21.94/1.74s
+INFO:root:planning start: env=36
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.08/21.94/1.73s
+INFO:root:planning start: env=37
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/21.94/1.72s
+INFO:root:planning start: env=38
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/21.94/1.72s
+INFO:root:planning start: env=39
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/21.94/1.72s
+INFO:root:planning start: env=40
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.07/21.94/1.71s
+INFO:root:planning start: env=41
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.08/21.94/1.72s
+INFO:root:planning start: env=42
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.09/21.94/1.73s
+INFO:root:planning start: env=43
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.10/21.94/1.74s
+INFO:root:planning start: env=44
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.10/21.94/1.75s
+INFO:root:planning start: env=45
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.10/21.94/1.75s
+INFO:root:planning start: env=46
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.75s
+INFO:root:planning start: env=47
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.10/21.94/1.75s
+INFO:root:planning start: env=48
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.76s
+INFO:root:planning start: env=49
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.76s
+INFO:root:planning start: env=50
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.77s
+INFO:root:planning start: env=51
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.77s
+INFO:root:planning start: env=52
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.13/21.94/1.77s
+INFO:root:planning start: env=53
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.13/21.94/1.78s
+INFO:root:planning start: env=54
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.77s
+INFO:root:planning start: env=55
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.77s
+INFO:root:planning start: env=56
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.78s
+INFO:root:planning start: env=57
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.77s
+INFO:root:planning start: env=58
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.78s
+INFO:root:planning start: env=59
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.78s
+INFO:root:planning start: env=60
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.79s
+INFO:root:planning start: env=61
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.79s
+INFO:root:planning start: env=62
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.79s
+INFO:root:planning start: env=63
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.79s
+INFO:root:planning start: env=64
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.13/21.94/1.80s
+INFO:root:planning start: env=65
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.13/21.94/1.81s
+INFO:root:planning start: env=66
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.13/21.94/1.81s
+INFO:root:planning start: env=67
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.80s
+INFO:root:planning start: env=68
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.80s
+INFO:root:planning start: env=69
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.81s
+INFO:root:planning start: env=70
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.80s
+INFO:root:planning start: env=71
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.80s
+INFO:root:planning start: env=72
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.79s
+INFO:root:planning start: env=73
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.79s
+INFO:root:planning start: env=74
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.80s
+INFO:root:planning start: env=75
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.80s
+INFO:root:planning start: env=76
+INFO:root:cumulative: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.12/21.94/1.81s
+INFO:root:planning start: env=77
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.80s
+INFO:root:planning start: env=78
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.80s
+INFO:root:planning start: env=79
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.81s
+INFO:root:planning start: env=80
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.81s
+INFO:root:planning start: env=81
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.81s
+INFO:root:planning start: env=82
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.80s
+INFO:root:planning start: env=83
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.10/21.94/1.80s
+INFO:root:planning start: env=84
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.81s
+INFO:root:planning start: env=85
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.00/1.11/21.94/1.81s
+INFO:root:planning start: env=86
+INFO:root:cumulative: success rate=0.65, runtime (min/avg/max/stdev) = 0.01/1.48/10.72/2.44s
+INFO:root:planning start: env=87
+INFO:root:cumulative: success rate=0.59, runtime (min/avg/max/stdev) = 0.01/1.53/10.72/2.17s
+INFO:root:planning start: env=88
+INFO:root:cumulative: success rate=0.64, runtime (min/avg/max/stdev) = 0.01/1.31/10.72/1.98s
+INFO:root:planning start: env=89
+INFO:root:cumulative: success rate=0.66, runtime (min/avg/max/stdev) = 0.01/1.20/10.72/1.87s
+INFO:root:planning start: env=90
+INFO:root:cumulative: success rate=0.66, runtime (min/avg/max/stdev) = 0.01/1.20/10.72/1.80s
+INFO:root:planning start: env=91
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.01/1.17/10.72/1.77s
+INFO:root:planning start: env=92
+INFO:root:cumulative: success rate=0.69, runtime (min/avg/max/stdev) = 0.01/1.14/16.04/1.83s
+INFO:root:planning start: env=93
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.14/16.04/1.80s
+INFO:root:planning start: env=94
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.12/16.04/1.75s
+INFO:root:planning start: env=95
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.14/16.04/1.79s
+INFO:root:planning start: env=96
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.13/16.04/1.77s
+INFO:root:planning start: env=97
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.14/16.04/1.78s
+INFO:root:planning start: env=98
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.14/16.04/1.77s
+INFO:root:planning start: env=99
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.13/16.04/1.76s
+INFO:root:planning start: env=100
+INFO:root:cumulative: success rate=0.67, runtime (min/avg/max/stdev) = 0.00/1.13/16.04/1.76s
+
+ ** Entire env: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/17.91/1.76s
+
+ ** Entire env: success rate=0.68, runtime (min/avg/max/stdev) = 0.00/1.11/18.08/1.76s
