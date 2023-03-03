@@ -1,5 +1,5 @@
 from __future__ import print_function
-from Model.end2end_model import End2EndMPNet
+from Model.end2end_model import End2EndMPNet, End2EndMPNet3D
 import Model.model as model
 import Model.AE.CAE as CAE_2d
 import numpy as np
@@ -7,12 +7,14 @@ import argparse
 import os
 import torch
 import data_loader_2d
+import data_loader_r3d
 from torch.autograd import Variable
 import copy
 import os
 import random
 from utility import *
 import utility_s2d
+import utility_s3d
 import progressbar
 
 from tensorboardX import SummaryWriter
@@ -40,10 +42,27 @@ def main(args):
         CAE = CAE_2d
         MLP = model.MLP
 
-    mpNet = End2EndMPNet(total_input_size, AE_input_size, mlp_input_size, \
-                        output_size, CAE, MLP)
+        mpNet = End2EndMPNet(total_input_size, AE_input_size, mlp_input_size, \
+                             output_size, CAE, MLP)
+
+    if args.env_type == 's3d':
+        total_input_size = 2800+4
+        AE_input_size = 2800
+        mlp_input_size = 28+4
+        output_size = 3
+        load_train_dataset = data_loader_r3d.load_train_dataset
+        normalize = utility_s3d.normalize
+        unnormalize = utility_s3d.unnormalize
+        CAE = CAE_2d
+        MLP = model.MLP
+
+        mpNet = End2EndMPNet3D(total_input_size, AE_input_size, mlp_input_size, \
+                            output_size, CAE, MLP)
+
     # setup loss
     if args.env_type == 's2d':
+        loss_f = mpNet.loss
+    elif args.env_type == 's3d':
         loss_f = mpNet.loss
 
     if not os.path.exists(args.model_path):
@@ -171,7 +190,7 @@ parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--start-epoch', type=int, default=0)
 parser.add_argument('--device', type=int, default=0, help='cuda device')
 
-parser.add_argument('--env-type', type=str, default='s3d', help='s2d for simple 2d')
+parser.add_argument('--env-type', type=str, default='s3d', help='s2d for simple 2d s3d for 3d')
 parser.add_argument('--world-size', nargs='+', type=float, default=20., help='boundary of world')
 parser.add_argument('--opt', type=str, default='Adagrad')
 args = parser.parse_args()
