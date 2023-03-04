@@ -93,6 +93,20 @@ def load_obs_list(env_id, folder='../data/simple'):
 	# returns a list of 3d obstacles, represented by their centers (x,y,z)
 	return obc
 
+def load_obs_size(env_id, folder='../data/simple'):
+	obc = np.zeros((10,3),dtype=np.float32)
+	temp = np.fromfile(folder + 'obs.dat')
+	obs = temp.reshape(len(temp)//3,3)
+
+	temp = np.fromfile(folder+'obs_perm2.dat',np.int32)
+	perm=temp.reshape(184756,10)
+
+	for j in range(0,10):
+		for k in range(0,3):
+			obc[j][k] = obs[perm[env_id][j]][k]
+	# returns a list of 3d obstacles, represented by their centers (x,y,z)
+	return obc
+
 #N=number of environments; NP=Number of Paths; s=starting environment no.; sp=starting_path_no
 #Unseen_environments==> N=10, NP=2000,s=100, sp=0
 #seen_environments==> N=100, NP=200,s=0, sp=4000
